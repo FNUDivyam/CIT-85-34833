@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Flexbox</title>
+    <style>
+        .box{
+            border: 2px solid green;
+          background-color: yellow;
+            height: 200px;
+            width: 200px;
+            margin: 2px;
+           
+        
+          
+          
+        }
+        .container{
+            border: 2px solid red;
+         
+            height: 900px;
+            display: flex;
+           /* flex-direction:column; */
+           justify-content: space-between;
+            align-items: stretch;
+       
+           }
+
+           #box3{
+               align-self: center;
+               /* margin-left: 23px; */
+               margin-top: 34px;
+           }
+/*     
+           #box1{
+               order: 22;
+               flex-grow: 89;
+               flex-shrink: 45;
+          flex-basis: 5435px;
+               align-self: flex-start;
+           }
+           #box3{
+               order: 33;
+               align-self: center;
+           }
+        #box4{
+            order: 53;
+            flex-grow: 3;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+    
+</body>
+</html>
