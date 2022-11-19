@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> hover menus </title>
+</head>
+
+<style>
+    #navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#navbar::before{
+    content: "";
+    background-color: rgb(134, 100, 100);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+   
+}
+
+
+#navbar ul{
+    display: flex;
+}
+
+
+#navbar ul li{
+    list-style: none;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 2px 42px;
+    font-size: 1.7rem;
+    color: black;
+}
+
+  #navbar ul li a:hover{
+    background-color: white;
+    color: green;
+    border-radius: 22px;
+  }
+
+</style>
+<body>
+    
+    <nav id="navbar">
+        
+        <ul>
+            <li class="items"> <a href="home.html"> Home</a></li>
+            <li class="items"> <a href="about.html"> About</a></li>
+            <li class="items"> <a href="contactus.html"> Contact us </a></li>
+            <li class="items"> <a href="#clients"> Our clients </a></li>
+        </ul>
+    </nav>
+</body>
+</html>
