@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo selectors before and after </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+
+        body{
+            background-color: black;
+            color: white;
+            height: 2000px;
+            background: url("nicole-king-tePtZeHXOus-unsplash.jpg");
+            background-size: 1444px 1131px;
+              background-repeat: no-repeat;
+              font-family: 'Josefin Sans', sans-serif;
+              
+            
+        }
+        .lather{
+            display: flex;
+        }
+        li{
+           list-style: none;
+            padding: -34px 23px;
+        }
+            header{
+                display: flex;
+                flex-direction: column;
+             
+                
+                background-size: 1438px 333px;
+                background-repeat: no-repeat;
+            }
+
+            .select{
+                display: flex;
+                
+                border: 2px solid red;
+                text-align: center;
+                margin: 4px 23px;
+              flex-direction: column;
+                height: 400px;
+                justify-content: center;
+                
+            
+           
+             
+             }
+             nav::before{
+                 content: "this is something"
+
+             }
+
+
+            .mrs{
+                font-size: 3rem;
+            }
+    </style>
+</head>
+<body>
+
+       <header>
+    <nav class="navigation">
+        <ul class="lather">
+            <li > About </li>
+            <li> Location</li>
+            <li> Main Menu</li>
+            <li> Aim</li>
+        </ul>
+    </nav>
+
+
+     <selector class="select">
+         <h1 class="mrs"> Welcome to the Coding world</h1>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ipsum exercitationem omnis quibusdam non perferendis totam dolorem, nisi quidem, qui unde eius iusto doloribus aperiam cumque quia aliquam eligendi quas quasi iste. Nobis, incidunt?</p>
+         
+     </selector>
+     
+</header>
+
+</body>
+</html>
