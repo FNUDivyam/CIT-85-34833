@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new hamburger practice with add event listener</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:762px)" href="phone.css">
+</head>
+<body>
+    
+    <nav class="navbar hnav background">
+      
+
+        <div class="navlist vnav">
+            <li class="items"> <a href="#"> Home</a></li>
+            <li class="items"> <a href="#"> Home</a></li>
+            <li class="items"> <a href="#"> Home</a></li>
+            <li class="items"> <a href="#"> Home</a></li>
+            <li class="items"> <a href="#"> Home</a></li>
+        </div>
+
+        <div class="rightnav vnav">
+            <input type="text" name="text" placeholder="Q">
+            <button class="btn"> Search here</button>
+        </div>
+    </nav>
+    
+
+    <div class="burger">
+        <div class="list"></div>
+        <div class="list"></div>
+        <div class="list"></div>
+    </div>
+
+    <script>
+
+        burger = document.querySelector('.burger')
+        navbar = document.querySelector('.navbar')
+        navlist = document.querySelector('.navlist')
+        rightnav = document.querySelector('.rightnav')
+
+        burger.addEventListener('click', ()=>{
+            navbar.classList.toggle('hnav');
+            navlist.classList.toggle('vnav');
+            rightnav.classList.toggle('vnav');
+        })
+
+
+    </script>
+</body>
+</html>
